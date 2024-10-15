@@ -11,8 +11,8 @@ export default {
       colors: {
         'header-color': '#171d25', 
       },
-      fontFamily: {
-        steam: ['"Motiva Sans"', 'sans-serif'],
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(184deg, rgba(23,26,33,1) 0%, rgba(27,40,56,1) 35%, rgba(42,71,94,1) 100%)'
       }
     },
   },

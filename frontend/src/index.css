@@ -12,9 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Motiva Sans';
-  src: url('/assets/fonts/MotivaSansRegular.woff.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+.background-container {
+  min-height: 100%;
+  background-image: url("./assets/bg-img-tmp.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
