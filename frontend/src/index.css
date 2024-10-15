@@ -11,3 +11,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: 'Motiva Sans';
+  src: url('/assets/fonts/MotivaSansRegular.woff.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

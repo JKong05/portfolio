@@ -11,6 +11,9 @@ export default {
       colors: {
         'header-color': '#171d25', 
       },
+      fontFamily: {
+        steam: ['"Motiva Sans"', 'sans-serif'],
+      }
     },
   },
   plugins: [],

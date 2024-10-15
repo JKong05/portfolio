@@ -4,6 +4,7 @@ import About from "./routes/About";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 import Body from "./components/Body";
+import Root from "./routes/Root";
 
 function App() {
   return (
@@ -11,6 +12,14 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route
+            path="/"
+            element={
+              <Body>
+                <Root />
+              </Body>
+            }
+          />
           <Route
             path="/about"
             element={
