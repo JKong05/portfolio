@@ -1,29 +1,49 @@
 import React from "react";
 import Profile from "../assets/justin.jpeg";
 import { US, KR } from "country-flag-icons/react/3x2";
+import { IoSchoolOutline } from "react-icons/io5";
+import { TbCat } from "react-icons/tb";
+
 
 export default function Root() {
   return (
     <>
       <div className="flex mx-4">
-        <div className="grid grid-cols-2 sm:grid-cols-[1fr_1.5fr_1fr] md:grid-cols-[1fr_2fr_1fr] gap-4">
+        <div className="grid grid-cols-2 mobile-L:grid-cols-[0.25fr_1fr] sm:grid-cols-[0.5fr_2fr_1fr] md:grid-cols-[1fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr] gap-4">
           {/** this is the spotify API element */}
           <div className="col-span-2 order-1 sm:col-span-1 sm:order-3 pt-2">
             <div className="text-2xl text-left flex items-center">
               Level{" "}
-              <div className="border-2 border-rose-700 rounded-full ml-2 w-10 h-10 flex items-center justify-center">
-                19
+              <div className="border-2 border-rose-700 rounded-full ml-2 w-8 h-8 flex items-center justify-center">
+                <span className="text-xl">19</span>
               </div>
             </div>
+            <div className="flex flex-wrap justify-start mt-3">
+              <a href="mailto: justin.i.kong@vanderbilt.edu">
+                <button className="box-content py-1 px-2 bg-button-color font-semibold text-slate-200 rounded hover:brightness-150 transition duration-150 mr-1">
+                  Message
+                </button>
+              </a>
+              <a href="https://www.vanderbilt.edu/" target="_blank">
+                <button className="box-content p-2 bg-button-color rounded hover:brightness-150 transition duration-150 mr-1">
+                  <IoSchoolOutline />
+                </button>
+              </a>
+              <a href="https://www.youtube.com/watch?v=AtPrjYp75uA" target="_blank">
+                <button className="box-content p-2 bg-button-color rounded hover:brightness-150 transition duration-150 mr-1">
+                  <TbCat />
+                </button>
+              </a>
+            </div>
           </div>
-          <div className="profile-picture box-content p-1 h-44 w-44 lg:h-48 lg:w-48 lg:ml-3 order-2 sm:order-1">
+          <div className="profile-picture box-content p-1 h-40 w-40 lg:ml-3 xs:h-48 xs:w-48 order-2 sm:order-1">
             <img
               src={Profile}
               alt="profile picture"
               className="relative h-full w-full object-cover z-1"
             />
           </div>
-          <div className="text-3xl xs:pt-2 ml-12 mobile-M:ml-4 mobile-L:ml-1 xs:ml-3 sm:ml-2.5 md:ml-1.5 lg:ml-6 xl:ml-3 order-3 sm:order-2">
+          <div className="text-3xl xs:pt-2 ml-8 mobile-M:ml-4 mobile-L:ml-1 xs:ml-3 sm:ml-2.5 md:ml-1.5 lg:ml-6 xl:ml-3 order-3 sm:order-2">
             <div className="text-base mb-0.5 mobile-M:text-2xl mobile-L:text-3xl xs:mb-2">
               Justin Kong
             </div>
@@ -37,16 +57,28 @@ export default function Root() {
                 South Carolina | Tennessee
               </p>
             </div>
-            <div
-              className="text-[0.5rem] leading-3 mt-1 mobile-M:mt-6 xs:text-sm mobile-L:mt-6 xs:mt-10 mobile-L:leading-4"
-            >
+            <div className="text-[0.5rem] leading-3 mt-1 mobile-M:mt-6 xs:text-sm mobile-L:mt-6 xs:mt-10 mobile-L:leading-4">
               My name is Justin and I am student at Vanderbilt University
               studying{" "}
               <span className="text-green-600 bg-black">Computer Science</span>{" "}
-              and <span className="text-sky-500">Public Health</span>! I am particularly interested
-              in the intersection of technology and healthcare.
+              and <span className="text-sky-500">Public Health</span>! I am
+              particularly interested in the intersection of technology and
+              healthcare.
             </div>
           </div>
+          <div className="col-span-2 order-4 xs:mt-5 pr-2">
+            <div className="box-content p-1 h-24 w-full bg-black opacity-20 border-2 rounded">
+              recent activity
+            </div>
+          </div>
+          <div className="order-5 row-span-2 xs:mt-5 mr-3">
+            <div className="box-content p-1 h-full w-full bg-black opacity-20 border-2 rounded">
+              Currently listening
+            </div>
+          </div>
+          <div className="order-6">Hello</div>
+          <div className="order-7">Hello</div>
+          <div className="order-8">Hello</div>
         </div>
       </div>
     </>

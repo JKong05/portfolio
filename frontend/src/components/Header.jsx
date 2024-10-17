@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 z-20 w-full bg-header-color flex flex-wrap items-center px-4 py-8">
-      <div className="relative w-full lg:w-2/3 mx-auto flex items-center justify-between h-10">
+      <div className="relative w-full lg:w-10/12 xl:w-8/12 mx-auto flex items-center justify-between h-10">
         <div className="relative md:hidden md:items-center lg:justify-start" ref={dropdownRef}>
           <button
             className={`text-slate-300 hover:brightness-150 focus:outline-none duration-300 ease-in-out items-center${
