@@ -4,12 +4,11 @@ import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
 import { TbCat } from "react-icons/tb";
 
-
 export default function Root() {
   return (
     <>
       <div className="flex mx-4">
-        <div className="grid grid-cols-2 mobile-L:grid-cols-[0.25fr_1fr] sm:grid-cols-[0.5fr_2fr_1fr] md:grid-cols-[1fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr] gap-4">
+        <div className="grid grid-cols-2 mobile-L:grid-cols-[0.25fr_1fr] sm:grid-cols-[0.5fr_2fr_1fr] md:grid-cols-[0.5fr_1fr_1fr] lg:grid-cols-[0.5fr_1.5fr_1fr] gap-4">
           {/** this is the spotify API element */}
           <div className="col-span-2 order-1 sm:col-span-1 sm:order-3 pt-2">
             <div className="text-2xl text-left flex items-center">
@@ -27,11 +26,6 @@ export default function Root() {
               <a href="https://www.vanderbilt.edu/" target="_blank">
                 <button className="box-content p-2 bg-button-color rounded hover:brightness-150 transition duration-150 mr-1">
                   <IoSchoolOutline />
-                </button>
-              </a>
-              <a href="https://www.youtube.com/watch?v=AtPrjYp75uA" target="_blank">
-                <button className="box-content p-2 bg-button-color rounded hover:brightness-150 transition duration-150 mr-1">
-                  <TbCat />
                 </button>
               </a>
             </div>
@@ -66,19 +60,25 @@ export default function Root() {
               healthcare.
             </div>
           </div>
-          <div className="col-span-2 order-4 xs:mt-5 pr-2">
-            <div className="box-content p-1 h-24 w-full bg-black opacity-20 border-2 rounded">
-              recent activity
+          <div className="col-span-2 row-span-2 order-4 xs:mt-5 pr-2">
+            <div
+              className="box-content h-screen w-full order-2 rounded"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
+            >
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 font-medium">
+                <div>Recent Activity</div>
+                <div>Updated: October 2024</div>
+              </div>
             </div>
           </div>
           <div className="order-5 row-span-2 xs:mt-5 mr-3">
-            <div className="box-content p-1 h-full w-full bg-black opacity-20 border-2 rounded">
+            <div
+              className="box-content p-1 h-screen w-full rounded"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
+            >
               Currently listening
             </div>
           </div>
-          <div className="order-6">Hello</div>
-          <div className="order-7">Hello</div>
-          <div className="order-8">Hello</div>
         </div>
       </div>
     </>
