@@ -1,8 +1,7 @@
-import React from "react";
+import {React, useEffect} from "react";
 import Profile from "../assets/justin.jpeg";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
-import { TbCat } from "react-icons/tb";
 
 export default function Root() {
   return (
@@ -62,7 +61,7 @@ export default function Root() {
           </div>
           <div className="col-span-2 row-span-2 order-4 xs:mt-5 pr-2">
             <div
-              className="box-content h-screen w-full order-2 rounded"
+              className="box-content h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
             >
               <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 font-medium">
@@ -71,12 +70,14 @@ export default function Root() {
               </div>
             </div>
           </div>
-          <div className="order-5 row-span-2 xs:mt-5 mr-3">
+          <div className="order-5 row-span-2 xs:mt-5">
             <div
-              className="box-content p-1 h-screen w-full rounded"
+              className="box-content h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
             >
-              Currently listening
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 font-medium">
+                <div>Currently Listening</div>
+              </div>
             </div>
           </div>
         </div>
