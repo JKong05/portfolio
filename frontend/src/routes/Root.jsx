@@ -1,9 +1,24 @@
-import {React, useEffect} from "react";
+import { React, useEffect, useState } from "react";
+import axios from 'axios';
 import Profile from "../assets/justin.jpeg";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
 
 export default function Root() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/spotify-data")
+        setData[response.data];
+      } catch (error) {
+        console.error(error)
+      }
+    }
+    getData();
+  }, []);
+
   return (
     <>
       <div className="flex mx-4">
@@ -64,7 +79,7 @@ export default function Root() {
               className="box-content h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
             >
-              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 font-medium">
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-medium">
                 <div>Recent Activity</div>
                 <div>Updated: October 2024</div>
               </div>
@@ -75,7 +90,7 @@ export default function Root() {
               className="box-content h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
             >
-              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 font-medium">
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-sm xs:text-medium">
                 <div>Currently Listening</div>
               </div>
             </div>

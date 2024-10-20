@@ -7,7 +7,7 @@ const port = 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5001",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
@@ -49,8 +49,6 @@ const refreshAccessToken = async () => {
 };
 
 app.get("/spotify-data", async (req, res) => {
-  console.log(access_token);
-  console.log(refresh_token);
   try {
     const profileResponse = await axios.get(
       "https://api.spotify.com/v1/me/player/currently-playing",
