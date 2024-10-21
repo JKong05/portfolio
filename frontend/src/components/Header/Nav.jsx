@@ -10,7 +10,9 @@ export default function Nav() {
             to="/"
             className={({ isActive }) =>
               `font-extrabold uppercase hover:text-sky-500 relative group ${
-                isActive ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4" : ""
+                isActive
+                  ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4"
+                  : ""
               }`
             }
           >
@@ -21,28 +23,15 @@ export default function Nav() {
             />
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `font-extrabold uppercase hover:text-sky-500 relative group ${
-                isActive ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4" : ""
-              }`
-            }
-          >
-            About
-            <span
-              className="absolute left-0 right-0 h-0.5 bg-sky-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-              style={{ bottom: "-2.5px" }}
-            />
-          </NavLink>
-        </li>
+
         <li>
           <NavLink
             to="/projects"
             className={({ isActive }) =>
               `font-extrabold uppercase hover:text-sky-500 relative group ${
-                isActive ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4" : ""
+                isActive
+                  ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4"
+                  : ""
               }`
             }
           >
@@ -55,10 +44,30 @@ export default function Nav() {
         </li>
         <li>
           <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `font-extrabold uppercase hover:text-sky-500 relative group ${
+                isActive
+                  ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4"
+                  : ""
+              }`
+            }
+          >
+            About
+            <span
+              className="absolute left-0 right-0 h-0.5 bg-sky-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+              style={{ bottom: "-2.5px" }}
+            />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/contact"
             className={({ isActive }) =>
               `font-extrabold uppercase hover:text-sky-500 relative group ${
-                isActive ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4" : ""
+                isActive
+                  ? "text-sky-500 underline decoration-2 decoration-sky-500 underline-offset-4"
+                  : ""
               }`
             }
           >

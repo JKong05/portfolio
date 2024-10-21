@@ -5,16 +5,17 @@ const SpotifyProgressBar = ({ data }) => {
   const duration = data.item.duration_ms;
 
   useEffect(() => {
+    setProgress(data.progress_ms);
+
     const interval = setInterval(() => {
-      setProgress((prevProgress) => prevProgress + 100);
+      setProgress((prevProgress) => {
+        const newProgress = prevProgress + 100;
+        return newProgress < duration ? newProgress : duration;
+      });
     }, 100);
 
-    if (progress >= duration) {
-      clearInterval(interval); 
-    }
-
     return () => clearInterval(interval);
-  }, [progress, duration]);
+  }, [data, duration]);
 
   const progressPercentage = (progress / duration) * 100;
 

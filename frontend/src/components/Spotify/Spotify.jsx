@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import SpotifyProgressBar from "./Widgets/SpotifyProgressBar";
+import SpotifyProgressBar from "./SpotifyProgressBar";
 import Vibrant from "node-vibrant";
 
 export default function Spotify({ data }) {
@@ -17,7 +17,7 @@ export default function Spotify({ data }) {
           const vibrant = palette.Vibrant.hex;
           const lightVibrant = palette.LightVibrant.hex;
           const muted = palette.Muted.hex;
-          const gradient = `linear-gradient(134deg, ${vibrant}, ${lightVibrant}, ${muted}), 100%`;
+          const gradient = `linear-gradient(134deg, ${lightVibrant}, ${vibrant}, ${muted}), 100%`;
 
           setBgColor(gradient); 
         }
@@ -32,8 +32,8 @@ export default function Spotify({ data }) {
       {listening ? (
         <div className="text-2xl text-lime-600 w-full px-2.5">
           <p>Currently Online</p>
-          <p className="pb-3 text-xl">Listening to:</p>
-          <div className="flex flex-col box-content border-2 h-max pb-2 text-white rounded-lg" style={{ background: bgColor }}>
+          <p className="pb-2 text-lg">Listening to:</p>
+          <div className="flex flex-col box-content h-max pb-2 text-white rounded-lg" style={{ background: bgColor }}>
             <div className="flex flex-row items-center">
               <img
                 className="ml-1 mt-1 lg:ml-2 lg:mt-2 rounded-md w-auto h-24 object-contain"

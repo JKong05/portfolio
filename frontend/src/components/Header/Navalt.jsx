@@ -23,16 +23,6 @@ export default function Navalt({ setIsOpen }) {
           Justin
         </NavLink>
         <NavLink
-          to="/about"
-          className="block px-4 py-2 text-sm text-black hover:text-sky-500 hover:font-bold"
-          role="menuitem"
-          tabIndex="-1"
-          id="menu-item-1"
-          onClick={() => setIsOpen(false)}
-        >
-          About
-        </NavLink>
-        <NavLink
           to="/projects"
           className="block px-4 py-2 text-sm text-black hover:text-sky-500 hover:font-bold"
           role="menuitem"
@@ -43,6 +33,16 @@ export default function Navalt({ setIsOpen }) {
           Projects
         </NavLink>
       </div>
+      <NavLink
+          to="/about"
+          className="block px-4 py-2 text-sm text-black hover:text-sky-500 hover:font-bold"
+          role="menuitem"
+          tabIndex="-1"
+          id="menu-item-1"
+          onClick={() => setIsOpen(false)}
+        >
+          About
+        </NavLink>
       <div className="pb-1" role="none">
         <NavLink
           to="/contact"

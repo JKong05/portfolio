@@ -1,23 +1,24 @@
 import { React, useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import Profile from "../assets/justin.jpeg";
-import Spotify from "../components/Spotify";
+import Spotify from "../components/Spotify/Spotify";
+import ActivityContainer from "../components/Col-1/ActivityContainer";
+import Education from "../components/Col-2/Education";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
 
 export default function Root() {
   const [data, setData] = useState(null);
-  
 
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/spotify-data")
+        const response = await axios.get("http://localhost:5000/spotify-data");
         setData(response.data);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
-    }
+    };
     getData();
   }, []);
 
@@ -75,23 +76,25 @@ export default function Root() {
               healthcare.
             </div>
           </div>
-          <div className="col-span-2 row-span-2 order-4 xs:mt-5">
+          <div className="col-span-2 row-span-4 order-4 overflow-y-scroll h-[50vh] xs:h-[90vh] xs:mt-5">
             <div
-              className="box-content h-screen w-full rounded"
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
+              className="box-content min-h-[90vh] w-full rounded"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
               <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
                 <div>Recent Activity</div>
                 <div>Updated: October 2024</div>
               </div>
+              <ActivityContainer />
             </div>
           </div>
-          <div className="order-5 row-span-2 col-span-2 xs:mt-5 sm:col-span-1">
+          <div className="order-5 row-span-5 col-span-2 my-5 pb-4 xs:pb-0 h-max xs:h-[90vh] sm:col-span-1">
             <div
-              className="box-content h-screen w-full rounded"
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.15)" }}
+              className="box-content min-h-[90vh] w-full rounded"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
-              <Spotify  data={data}/>
+              <Spotify data={data} />
+              <Education />
             </div>
           </div>
         </div>
