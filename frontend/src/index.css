@@ -12,6 +12,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer utilities {
+  .scrollbar-auto-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+
+  .scrollbar-auto-hide::-webkit-scrollbar {
+    display: none; 
+  }
+}
+
+
 .background-container {
   min-height: 100%;
   background-image: url("./assets/bg-img-tmp.gif");

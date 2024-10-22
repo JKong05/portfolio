@@ -6,6 +6,8 @@ import ActivityContainer from "../components/Col-1/ActivityContainer";
 import Education from "../components/Col-2/Education";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
+import Skills from "../components/Col-2/Skills"
+import Coursework from "../components/Col-2/Coursework";
 
 export default function Root() {
   const [data, setData] = useState(null);
@@ -25,7 +27,7 @@ export default function Root() {
   return (
     <>
       <div className="flex mx-4">
-        <div className="grid grid-cols-2 mobile-L:grid-cols-[0.25fr_1fr] sm:grid-cols-[0.5fr_1.25fr_1fr] md:grid-cols-[0.5fr_1fr_1fr] lg:grid-cols-[0.5fr_1.5fr_1fr] sm: gap-3 md:gap-4">
+        <div className="grid grid-cols-2 mobile-L:grid-cols-[0.25fr_1fr] sm:grid-cols-[0.5fr_1.25fr_1fr] md:grid-cols-[0.5fr_1.5fr_1.25fr] lg:grid-cols-[0.5fr_1.5fr_1fr] sm: gap-3 md:gap-4">
           <div className="col-span-2 order-1 sm:col-span-1 sm:order-3 pt-2">
             <div className="text-2xl text-left flex items-center">
               Level{" "}
@@ -67,7 +69,7 @@ export default function Root() {
                 South Carolina | Tennessee
               </p>
             </div>
-            <div className="text-[0.5rem] leading-3 mt-1 mobile-M:mt-6 xs:text-sm mobile-L:mt-6 xs:mt-10 mobile-L:leading-4">
+            <div className="text-[0.65rem] leading-3 mt-1 mobile-M:mt-6 xs:text-sm mobile-L:mt-6 xs:mt-10 mobile-L:leading-4">
               My name is Justin and I am student at Vanderbilt University
               studying{" "}
               <span className="text-green-600 bg-black">Computer Science</span>{" "}
@@ -76,25 +78,27 @@ export default function Root() {
               healthcare.
             </div>
           </div>
-          <div className="col-span-2 row-span-4 order-4 overflow-y-scroll h-[50vh] xs:h-[90vh] xs:mt-5">
+          <div className="col-span-2 row-span-4 order-4 overflow-y-auto sm:scrollbar-auto-hide h-[50vh] xs:h-[90vh] xs:mt-5">
             <div
               className="box-content min-h-[90vh] w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
               <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
-                <div>Recent Activity</div>
+                <div className="font-semibold">Recent Activity</div>
                 <div>Updated: October 2024</div>
               </div>
               <ActivityContainer />
             </div>
           </div>
-          <div className="order-5 row-span-5 col-span-2 my-5 pb-4 xs:pb-0 h-max xs:h-[90vh] sm:col-span-1">
+          <div className="order-5 row-span-5 col-span-2 xs:my-5 pb-4 xs:pb-0 xs:h-[90vh] sm:col-span-1">
             <div
-              className="box-content min-h-[90vh] w-full rounded"
+              className="box-content pb-2 xs:pb-0 h-max xs:min-h-[90vh] w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
               <Spotify data={data} />
               <Education />
+              <Coursework />
+              <Skills />
             </div>
           </div>
         </div>

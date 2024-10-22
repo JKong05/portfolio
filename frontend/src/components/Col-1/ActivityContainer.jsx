@@ -36,7 +36,7 @@ export default function ActivityContainer() {
                 position={"Social Media Assistant"}
                 organization={"Vanderbilt CS Department"}
                 startDate={"Aug. 2024"}
-                endDate={"Present"}
+                endDate={"present"}
                 location={"Nashville, TN"}
                 description={
                   "I personally oversee the social media accounts for Vanderbilt’s computer science department, which totals over 1000 followers."
