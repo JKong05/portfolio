@@ -25,10 +25,10 @@ import {
 export default function Skills() {
   return (
     <>
-      <div className="flex flex-col px-2.5 mt-6 font-semibold">
+      <div className="flex flex-col px-2.5 mt-4 font-semibold">
         <div>Technical Skills</div>
         <div className="flex flex-col font-normal items-start">
-          <div className="flex flex-row flex-wrap text-[36px] mobile-L:text-[26px] md:text-[36px]">
+          <div className="flex flex-row flex-wrap text-[30px] mobile-L:text-[24px] 2xl:text-[30px]">
             <FaJava className="box-content p-1 rounded-lg" />
             <FaPython className="box-content p-1 rounded-lg" />
             <FaHtml5 className="box-content p-1 rounded-lg" />

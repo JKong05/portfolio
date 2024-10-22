@@ -78,21 +78,21 @@ export default function Root() {
               healthcare.
             </div>
           </div>
-          <div className="col-span-2 row-span-4 order-4 overflow-y-auto sm:scrollbar-auto-hide h-[50vh] xs:h-[90vh] xs:mt-5">
+          <div className="col-span-2 row-span-4 order-4 overflow-y-auto sm:scrollbar-auto-hide h-[30vh] mobile-L:h-[62vh] xl:h-screen xs:mt-5">
             <div
-              className="box-content min-h-[90vh] w-full rounded"
+              className="box-content h-max w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
-              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md overflow-y-auto sm:scrollbar-auto-hide">
                 <div className="font-semibold">Recent Activity</div>
                 <div>Updated: October 2024</div>
               </div>
               <ActivityContainer />
             </div>
           </div>
-          <div className="order-5 row-span-5 col-span-2 xs:my-5 pb-4 xs:pb-0 xs:h-[90vh] sm:col-span-1">
+          <div className="order-5 row-span-5 col-span-2 xs:my-5 pb-4 mobile-L:pb-0 mobile-L:h-[62vh] xl:h-screen sm:col-span-1 overflow-y-auto">
             <div
-              className="box-content pb-2 xs:pb-0 h-max xs:min-h-[90vh] w-full rounded"
+              className="box-content pb-2 xs:pb-0 min-h-max xs:min-h-[62vh] xl:min-h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
               <Spotify data={data} />

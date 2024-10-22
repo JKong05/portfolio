@@ -75,6 +75,7 @@ export default function ActivityContainer() {
                   "I participated in a medical shadowing internship program where I directly coordinated with and assisted medical professionals in the emergency department and the pulmonary and critical care departments at Lexington Medical Center, learning how to triage, assess, and document patients effectively. "
                 }
               />
+              
         </div>
     )
 }
