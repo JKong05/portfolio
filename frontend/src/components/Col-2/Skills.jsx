@@ -26,8 +26,8 @@ export default function Skills() {
   return (
     <>
       <div className="flex flex-col px-2.5 mt-4 font-semibold">
-        <div>Technical Skills</div>
-        <div className="flex flex-col font-normal items-start">
+        <div className="text-xl">Technical Skills</div>
+        <div className="flex flex-col font-normal items-start text-slate-200">
           <div className="flex flex-row flex-wrap text-[30px] mobile-L:text-[24px] 2xl:text-[30px]">
             <FaJava className="box-content p-1 rounded-lg" />
             <FaPython className="box-content p-1 rounded-lg" />

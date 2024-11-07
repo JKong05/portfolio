@@ -7,7 +7,7 @@ import Education from "../components/Col-2/Education";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
 import Skills from "../components/Col-2/Skills"
-import Coursework from "../components/Col-2/Coursework";
+import Interests from "../components/Col-2/Interests";
 
 export default function Root() {
   const [data, setData] = useState(null);
@@ -83,22 +83,22 @@ export default function Root() {
               className="box-content h-max w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
-              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md overflow-y-auto sm:scrollbar-auto-hide">
+              <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
                 <div className="font-semibold">Recent Activity</div>
                 <div>Updated: October 2024</div>
               </div>
               <ActivityContainer />
             </div>
           </div>
-          <div className="order-5 row-span-5 col-span-2 xs:my-5 pb-4 mobile-L:pb-0 mobile-L:h-[62vh] xl:h-screen sm:col-span-1 overflow-y-auto">
+          <div className="order-5 row-span-5 col-span-2 xs:my-5 pb-4 mobile-L:pb-0 mobile-L:h-[62vh] xl:h-screen sm:col-span-1 overflow-y-auto sm:scrollbar-auto-hide">
             <div
               className="box-content pb-2 xs:pb-0 min-h-max xs:min-h-[62vh] xl:min-h-screen w-full rounded"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}
             >
               <Spotify data={data} />
               <Education />
-              <Coursework />
               <Skills />
+              <Interests />
             </div>
           </div>
         </div>
