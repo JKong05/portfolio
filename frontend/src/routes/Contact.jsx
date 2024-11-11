@@ -42,8 +42,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="box-content max-w-4xl mx-auto" style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}>
-      <h1 className="flex justify-between text-4xl bg-custom-gradient font-semibold mb-4 py-2 pl-4">Talk to me!</h1>
+    <div className="box-content mx-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}>
+      <h1 className="flex justify-between text-xl bg-custom-gradient font-semibold mb-4 py-2 pl-4">Talk to me!</h1>
       <div className="px-4 pb-4">
       <form onSubmit={onSubmit} className="space-y-4">
         <div className="flex flex-col">

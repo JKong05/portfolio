@@ -70,10 +70,10 @@ export default function Root() {
               </p>
             </div>
             <div className="text-[0.65rem] leading-3 mt-1 mobile-M:mt-6 xs:text-sm mobile-L:mt-6 xs:mt-10 mobile-L:leading-4">
-              My name is Justin and I am student at Vanderbilt University
+              My name is Justin and I am a student at Vanderbilt University
               studying{" "}
               <span className="text-green-600 bg-black">Computer Science</span>{" "}
-              and <span className="text-sky-500">Public Health</span>! I am
+              and <span className="text-cyan-500">Public Health</span>! I am
               particularly interested in the intersection of technology and
               healthcare.
             </div>
