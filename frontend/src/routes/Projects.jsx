@@ -1,20 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectNav from '../components/project-components/ProjectNav'
 import ProjectCard from '../components/project-components/ProjectCard'
-import findmyap from "../assets/projects/findmyap.png"
-import pattywagon from "../assets/projects/pattywagon.png"
-import socialchangemaker from "../assets/projects/socialchange.png"
+import { projectDetails } from '../components/project-components/project-data/projectDetails'
 
 export default function Projects() {
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const filteredProjects = Object.entries(projectDetails).filter(([_, project]) => {
+    if (selectedCategory === 'all') return true;
+    return project.category === selectedCategory;
+});
+
   return (
-    <div className="mx-4 pb-4">
-      <div className='grid grid-cols-1 xs:grid-cols-2 gap-4'>
+    <div className="mx-4 pb-4 min-h-screen" style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}>
+      <div className='grid grid-cols-1 xs:grid-cols-2 gap-4 p-4'>
         <div className='xs:col-span-2'>
-          <ProjectNav />
+        <ProjectNav 
+            onCategoryChange={setSelectedCategory} 
+            selectedCategory={selectedCategory}
+          />
         </div>
-        <ProjectCard projectTitle={"findmyAP"} projectImg={findmyap}/>
-        <ProjectCard projectTitle={"Patty Wagon Voyage"} projectImg={pattywagon}/>
-        <ProjectCard projectTitle={"Social Changemaker Case Management Form"} projectImg={socialchangemaker}/>
+        {filteredProjects.map(([id, project]) => (
+          <ProjectCard 
+            key={id}
+            projectID={id}
+            projectTitle={project.title}
+            projectImg={project.image}
+            projectDesc={project.description}
+            projectLink={project.link}
+            projectStack={project.stack}
+          />
+        ))}
       </div>
     </div>
   )
