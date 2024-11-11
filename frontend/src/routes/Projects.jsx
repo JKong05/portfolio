@@ -2,6 +2,8 @@ import React from 'react'
 import ProjectNav from '../components/project-components/ProjectNav'
 import ProjectCard from '../components/project-components/ProjectCard'
 import findmyap from "../assets/projects/findmyap.png"
+import pattywagon from "../assets/projects/pattywagon.png"
+import socialchangemaker from "../assets/projects/socialchange.png"
 
 export default function Projects() {
   return (
@@ -10,12 +12,9 @@ export default function Projects() {
         <div className='xs:col-span-2'>
           <ProjectNav />
         </div>
-        <ProjectCard projectTitle={"He"} projectImg={findmyap}/>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard projectTitle={"findmyAP"} projectImg={findmyap}/>
+        <ProjectCard projectTitle={"Patty Wagon Voyage"} projectImg={pattywagon}/>
+        <ProjectCard projectTitle={"Social Changemaker Case Management Form"} projectImg={socialchangemaker}/>
       </div>
     </div>
   )

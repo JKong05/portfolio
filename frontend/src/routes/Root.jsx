@@ -48,7 +48,7 @@ export default function Root() {
               </a>
             </div>
           </div>
-          <div className="profile-picture box-content p-1 h-40 w-40 lg:ml-3 xs:h-48 xs:w-48 order-2 sm:order-1">
+          <div className="profile-picture box-content h-40 w-40 p-1 lg:ml-3 xs:h-48 xs:w-48 order-2 sm:order-1">
             <img
               src={Profile}
               alt="profile picture"
