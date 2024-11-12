@@ -15,7 +15,7 @@ export default function ProjectModal({ isOpen, onClose, projectTitle, projectDes
             <motion.div 
                 initial={{ scale: 0.8 }} 
                 animate={{ scale: 1 }} 
-                className="bg-custom-gradient max-w-screen mobile-L:max-w-3xl w-full max-h-[60vh] flex flex-col"
+                className="bg-custom-gradient max-w-screen mobile-L:max-w-3xl w-full max-h-[60vh] mobile-L:max-h-[80vh] flex flex-col"
             >
                 <div className="flex justify-end p-2 bg-custom-gradient sticky top-0 z-10">
                     <button 
