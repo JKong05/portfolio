@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/spotify-data': {
-        target: 'http://localhost:5000',
+        target: 'https://portfolio-oq4z.onrender.com',
         changeOrigin: true,             
       },
     },
