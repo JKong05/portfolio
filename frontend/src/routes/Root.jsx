@@ -15,7 +15,7 @@ export default function Root() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("https://portfolio-oq4z.onrender.com");
+        const response = await axios.get("https://portfolio-oq4z.onrender.com/spotify-data");
         setData(response.data);
       } catch (error) {
         console.error(error);
