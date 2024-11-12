@@ -7,7 +7,7 @@ const port = 5000;
 
 app.use(
   cors({
-    origin: "https://portfolio-frontend-z082.onrender.com/",
+    origin: "https://portfolio-frontend-z082.onrender.com",
     credentials: true,
   })
 );
