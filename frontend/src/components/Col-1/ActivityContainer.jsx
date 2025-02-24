@@ -5,10 +5,22 @@ import vuceptLogo from "../../assets/activity/vucept-logo.jpg";
 import vucsLogo from "../../assets/activity/vucs-logo.png";
 import lexmedLogo from "../../assets/activity/lexmed-logo.jpg";
 import wondryLogo from "../../assets/activity/wondry-logo.png";
+import proteligenceLogo from "../../assets/activity/proteligence-logo.png"
 
 export default function ActivityContainer() {
   return (
     <div>
+      <ActivityCard 
+        img={proteligenceLogo}
+        position={"Software Engineer Intern"}
+        organization={"Proteligence"}
+        startDate={"May 2025"}
+        endDate={"August 2025"}
+        location={"Columbia, SC"}
+        description={
+          "Incoming software engineer intern at Proteligence. Tools include Enterprise Java, Typescript, and AWS."
+        }
+      />
       <ActivityCard
         img={changeplusplusLogo}
         position={"Developer"}

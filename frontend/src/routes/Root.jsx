@@ -85,7 +85,7 @@ export default function Root() {
             >
               <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
                 <div className="font-semibold">Recent Activity</div>
-                <div>Updated: October 2024</div>
+                <div>Updated: February 2025</div>
               </div>
               <ActivityContainer />
             </div>
