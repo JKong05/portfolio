@@ -3,6 +3,7 @@ import pattywagon from "../../../assets/projects/pattywagon.png"
 import socialchangemaker from "../../../assets/projects/socialchange.png"
 import llm_bjt from "../../../assets/projects/llm-bjt.png"
 import miracle_flights from "../../../assets/projects/miracle-flights.png"
+import age_linguistics_pipeline from "../../../assets/projects/age-linguistics.png"
 
 export const projectDetails = {
     findmyAP: {
@@ -39,6 +40,15 @@ export const projectDetails = {
       link: "https://docs.google.com/document/d/1J6_oW0h9mophgnnnJRjAEf3nkxZU_oF8T99Pqf5lydE/edit?usp=sharing",
       stack: ["Python - Transformers, PyTorch, TensorFlow", "Unity", "C#"],
       image: llm_bjt,
+      category: "research"
+    },
+    age_linguistics_pipeline: {
+      projectID: "age_linguistics_pipeline",
+      title: "Speech-to-Sentiment Pipeline for Analyzing Semantic and Expressive Changes Across the Lifespan",
+      description: "This project aims to develop an accessible pipeline and user interface that converts spoken language into sentiment and semantic analyses. The initial application will investigate how semantics and expressivity in speech evolve with age. By processing speech inputs to extract prosodic features—such as intonation, tone, and pitch—and semantic content, we will generate representational embeddings that encapsulate both the meaning and emotional nuances of spoken language. Utilizing multimodal models, the pipeline will facilitate the comparison of these embeddings across different age groups, providing insights into the developmental trajectory of speech characteristics throughout the human lifespan.",
+      link: "https://www.tovarlab.org/projects#project-speech-to-sentiment-pipeline-for-analyzing-semantic-and-expressive-changes-across-the-lifespan",
+      stack: ["Python, PyTorch, Model Development"],
+      image: age_linguistics_pipeline,
       category: "research"
     },
     miracle_flights: {
