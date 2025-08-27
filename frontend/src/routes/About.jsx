@@ -23,10 +23,10 @@ export default function About() {
 
       <div className="mx-auto">
         <div className="leading-relaxed">
-          I am a current sophomore at Vanderbilt University double majoring in{" "}
+          I am a current junior at Vanderbilt University double majoring in{" "}
           <span className="text-green-600 bg-black px-1">Computer Science (CS)</span>{" "}
-          and <span className="text-cyan-500">Medicine, Health, and Society (MHS)</span>,
-          with a minor in Data Science (DS)! I am particularly interested in the intersection of technology and healthcare.
+          and <span className="text-cyan-500">Medicine, Health, and Society (MHS)</span>! 
+          I am particularly interested in the intersection of technology and healthcare.
         </div>
 
         <div className="mt-4">

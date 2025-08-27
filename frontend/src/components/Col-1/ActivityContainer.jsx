@@ -11,14 +11,25 @@ export default function ActivityContainer() {
   return (
     <div>
       <ActivityCard 
+        img={vucsLogo}
+        position={"CS2201 Teaching Assistant"}
+        organization={"Vanderbilt CS Department"}
+        startDate={"Aug. 2025"}
+        endDate={"present"}
+        location={"Nashville, TN"}
+        description={
+          "TA for Vanderbilt's Data Structures and Algorithms course."
+        }
+      />
+      <ActivityCard 
         img={proteligenceLogo}
-        position={"Software Engineer Intern"}
+        position={"Software Development Intern"}
         organization={"Proteligence"}
         startDate={"May 2025"}
-        endDate={"August 2025"}
+        endDate={"present"}
         location={"Columbia, SC"}
         description={
-          "Incoming software engineer intern at Proteligence. Tools include Enterprise Java, Typescript, and AWS."
+          "Software development intern at Proteligence, a Blue Cross and Blue Shield solutions provider."
         }
       />
       <ActivityCard
@@ -37,10 +48,10 @@ export default function ActivityContainer() {
         position={"Research Assistant"}
         organization={"Wallace Lab: Brain-Inspired AI"}
         startDate={"Aug. 2024"}
-        endDate={"present"}
+        endDate={"Aug. 2025"}
         location={"Nashville, TN"}
         description={
-          "In the Wallace Lab, I conduct comparative research on language evolution in large language models and humans, analyzing developmental linguistics across different ages and sensory modalities through the use of representational similarity analysis and participant-based study."
+          "In the Wallace Lab, I conducted comparative research on language evolution in large language models and humans, analyzing developmental linguistics across different ages and sensory modalities through the use of representational similarity analysis and participant-based study."
         }
       />
       <ActivityCard
