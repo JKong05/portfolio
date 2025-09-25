@@ -45,7 +45,7 @@ export default function About() {
         <div className="mt-4">
           <h2 className="text-xl font-bold">Experiences</h2>
           <div>
-            I have had the opportunity to work with a variety of organizations here at Vanderbilt and with external companies as well, applying my technical expertise in <span className="font-semibold text-sky-500">web development, data analysis, and software development</span>. I've learned and applied languages and frameworks such as Python, Java, JavaScript, React, Node.js, and more. For a more detailed
+            I have had the opportunity to work with a variety of organizations here at Vanderbilt and with external companies as well, applying my technical expertise in <span className="font-semibold text-sky-500">cloud, data engineering, and software development</span>. I've learned and applied languages and frameworks such as Python, Java, JavaScript, React, Node.js, and more. For a more detailed
             breakdown of my prior experiences and working skills, please refer to my <a
             href={Resume}
             download="justin-kong-resume.pdf"
