@@ -5,24 +5,13 @@ import vuceptLogo from "../../assets/activity/vucept-logo.jpg";
 import vucsLogo from "../../assets/activity/vucs-logo.png";
 import lexmedLogo from "../../assets/activity/lexmed-logo.jpg";
 import wondryLogo from "../../assets/activity/wondry-logo.png";
-import proteligenceLogo from "../../assets/activity/proteligence-logo.png"
-import wflogo from "../../assets/activity/wf-logo.png"
+import proteligenceLogo from "../../assets/activity/proteligence-logo.png";
+import wflogo from "../../assets/activity/wf-logo.png";
 
 export default function ActivityContainer() {
   return (
     <div>
-      <ActivityCard 
-        img={wflogo}
-        position={"Software Engineering Intern"}
-        organization={"Wells Fargo"}
-        startDate={"May 2026"}
-        endDate={"Aug. 2026"}
-        location={"Charlotte, NC"}
-        description={
-          "Incoming Summer 2026 SWE Intern"
-        }
-      />
-      <ActivityCard 
+      <ActivityCard
         img={vucsLogo}
         position={"CS2201 Teaching Assistant"}
         organization={"Vanderbilt CS Department"}
@@ -33,7 +22,7 @@ export default function ActivityContainer() {
           "TA for Vanderbilt's Data Structures and Algorithms course."
         }
       />
-      <ActivityCard 
+      <ActivityCard
         img={proteligenceLogo}
         position={"Software Development Intern"}
         organization={"Proteligence"}
