@@ -6,7 +6,7 @@ import ActivityContainer from "../components/Col-1/ActivityContainer";
 import Education from "../components/Col-2/Education";
 import { US, KR } from "country-flag-icons/react/3x2";
 import { IoSchoolOutline } from "react-icons/io5";
-import Skills from "../components/Col-2/Skills"
+import Skills from "../components/Col-2/Skills";
 import Interests from "../components/Col-2/Interests";
 
 export default function Root() {
@@ -15,7 +15,9 @@ export default function Root() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("https://portfolio-production-f647.up.railway.app/spotify-data");
+        const response = await axios.get(
+          "https://portfolio-production-f647.up.railway.app/spotify-data"
+        );
         setData(response.data);
       } catch (error) {
         console.error(error);
@@ -85,7 +87,7 @@ export default function Root() {
             >
               <div className="flex justify-between items-center w-full bg-custom-gradient px-2 py-2 text-md">
                 <div className="font-semibold">Recent Activity</div>
-                <div>Updated: Sept. 2025</div>
+                <div>Updated: Jan. 2026</div>
               </div>
               <ActivityContainer />
             </div>

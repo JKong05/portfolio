@@ -12,11 +12,20 @@ export default function ActivityContainer() {
   return (
     <div>
       <ActivityCard
+        img={wflogo}
+        position={"Software Engineering Intern"}
+        organization={"Wells Fargo"}
+        startDate={"May 2026"}
+        endDate={"Aug. 2026"}
+        location={"Charlotte, NC"}
+        description={"Summer 2026"}
+      />
+      <ActivityCard
         img={vucsLogo}
         position={"CS2201 Teaching Assistant"}
         organization={"Vanderbilt CS Department"}
         startDate={"Aug. 2025"}
-        endDate={"present"}
+        endDate={"Jan. 2026"}
         location={"Nashville, TN"}
         description={
           "TA for Vanderbilt's Data Structures and Algorithms course."
@@ -27,7 +36,7 @@ export default function ActivityContainer() {
         position={"Software Development Intern"}
         organization={"Proteligence"}
         startDate={"May 2025"}
-        endDate={"present"}
+        endDate={"Jan. 2026"}
         location={"Columbia, SC"}
         description={
           "Software development intern at Proteligence, a Blue Cross and Blue Shield solutions provider."
